@@ -1,12 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
 
-export const accentColor = 'hsla(327, 76%, 64%, 1)'
-
 const theme = extendTheme({
   components: {
     Link: {
       baseStyle: {
-        color: accentColor,
+        color: 'accent.default',
         _hover: {
           filter: 'brightness(120%)',
           textDecoration: 'none'
@@ -25,7 +23,8 @@ const theme = extendTheme({
       600: 'hsla(327, 76%, 64%, 0.6)',
       700: 'hsla(327, 76%, 64%, 0.7)',
       800: 'hsla(327, 76%, 64%, 0.8)',
-      900: 'hsla(327, 76%, 64%, 0.9)'
+      900: 'hsla(327, 76%, 64%, 0.9)',
+      default: 'hsla(327, 76%, 64%, 1)'
     }
   }
 })
