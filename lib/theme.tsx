@@ -1,10 +1,32 @@
-// 1. import `extendTheme` function
 import { extendTheme } from '@chakra-ui/react'
-// 2. Add your color mode config
-const config = {
-  initialColorMode: 'dark',
-  useSystemColorMode: false
-}
-// 3. extend the theme
-const theme = extendTheme({ config })
+
+export const accentColor = 'hsla(327, 76%, 64%, 1)'
+
+const theme = extendTheme({
+  components: {
+    Link: {
+      baseStyle: {
+        color: accentColor,
+        _hover: {
+          filter: 'brightness(120%)',
+          textDecoration: 'none'
+        }
+      }
+    }
+  },
+  colors: {
+    accent: {
+      50: 'hsla(327, 76%, 64%, 0.05)',
+      100: 'hsla(327, 76%, 64%, 0.1)',
+      200: 'hsla(327, 76%, 64%, 0.2)',
+      300: 'hsla(327, 76%, 64%, 0.3)',
+      400: 'hsla(327, 76%, 64%, 0.4)',
+      500: 'hsla(327, 76%, 64%, 0.5)',
+      600: 'hsla(327, 76%, 64%, 0.6)',
+      700: 'hsla(327, 76%, 64%, 0.7)',
+      800: 'hsla(327, 76%, 64%, 0.8)',
+      900: 'hsla(327, 76%, 64%, 0.9)'
+    }
+  }
+})
 export default theme

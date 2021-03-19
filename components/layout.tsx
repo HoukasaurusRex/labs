@@ -5,8 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './navbar'
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'The Lab'
+export const siteDescription = 'Projects, Prototypes, and Experiments in Web Development'
 
 const Layout = ({ children, home }: { children: React.ReactNode; home?: boolean }): JSX.Element => {
   return (

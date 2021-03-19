@@ -1,13 +1,14 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
+import { Chakra } from '../lib/chakra'
 
-const App = ({ Component }: AppProps): JSX.Element => {
+const App = ({ Component, pageProps: { cookies } }: AppProps): JSX.Element => {
   return (
-    <ChakraProvider>
+    <Chakra cookies={cookies}>
       <Component />
-    </ChakraProvider>
+    </Chakra>
   )
 }
 
 export default App
+export { getServerSideProps } from '../lib/chakra'
