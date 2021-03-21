@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   return (
     <Box as="nav" position="fixed" width="100%" height="70px" p="5px 10px" maxWidth="100vw">
       <Flex>
-        <Link href="/">
+        <Link href="/" borderRadius="50%">
           <Image src="/images/itsme-round-200.png" w="50px" h="50px" />
         </Link>
         <Spacer />

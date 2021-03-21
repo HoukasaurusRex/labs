@@ -5,6 +5,7 @@ const theme = extendTheme({
     Link: {
       baseStyle: {
         color: 'accent.default',
+        borderRadius: '2px',
         _hover: {
           filter: 'brightness(120%)',
           textDecoration: 'none'
